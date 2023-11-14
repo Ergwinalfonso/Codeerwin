@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int main()
+{
+    //Declaramos variables
+    int n,sumaCuadrados;
+    //Pedimos ingresar valor y guardamos valor en n
+    printf(" • Ingresé un valor N: ");
+    scanf("%d",&n);
+    
+    //mostramos lo que vamos a resolver
+    printf("\n • [Suma, de los cuadrados, de los ");
+    printf("%d \nprimeros números naturales]\n",n);
+    printf ("\n • N(%d) = ",n);
+    for(int i=1;i<n+1;i++) 
+    {
+        printf(" %d", i);
+        printf("^2");
+        if(i<(n)) printf(" +");
+    }
+    
+    printf("\n\n • Fórmula: suma = n(n+1)(2(n)+1)/6\n");
+    
+    printf("\n • Fórmula: suma = %d(%d+1)(2(%d)+1)/6\n",n,n,n);
+    
+    //Resolvemos con formula y mostramos solucion
+    sumaCuadrados = n*(n+1)*(2*n+1)/6;
+    printf("\n • Suma Cuadrados = %d\n\n", sumaCuadrados);
+    
+   return 0;
+}
+
+
