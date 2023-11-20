@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    printf(" • Ingrese el valor de N: ");
+    scanf("%d", &N);
+
+    int suma = 0;
+
+    printf(" • Suma = ");
+    for (int i = 1; i <= N; i++) {
+        suma += i * i;
+        printf("%d",i);
+
+        if(i < N) printf("^2 + ");
+        else  printf("^2 ");
+    }
+
+    printf("= %d", suma);
+    printf("\n\n");
+
+    return 0;
+}
+
