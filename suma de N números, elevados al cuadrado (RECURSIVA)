@@ -1,0 +1,29 @@
+  #include <stdio.h>
+  
+int sumaCuadrados(int n);
+
+int main() {
+    int n;
+    
+    printf("Introduce un número: ");
+    scanf("%d", &n);
+    
+    printf("Respuesta: %d\n", sumaCuadrados(n));
+    return 0;
+}
+
+int sumaCuadrados(int n) {
+    if (n == 0) {
+    
+        return 0;
+        
+    } else {
+    
+        return n*n + sumaCuadrados(n-1);
+    }
+}
+
+
+
+
+    
